@@ -1,10 +1,41 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Home</ion-title>
+    <!-- <ion-title>ETHEREUM</ion-title> -->
+    <ion-img style="widows: 50px;height: 50px;"src="/assets/icon/ethicon.png"></ion-img>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
-</ion-content>
+<ion-content>
+  
+  <ion-card >
+      <ion-card-content>
+        <ion-card-title>{{data.price_usd}}<span style="color:gainsboro"> USD</span></ion-card-title>
+       
+    
+      </ion-card-content>
+    </ion-card>
+    <ion-card >
+        <ion-card-content>
+         
+          <ion-card-title>{{data.rank}} <span style="color:gainsboro"> in Ranking</span></ion-card-title>
+          
+      
+        </ion-card-content>
+      </ion-card>
+      <ion-card >
+          <ion-card-content>
+            
+            <ion-card-title>{{data.market_cap}} <span style="color:gainsboro"> Market-Cap</span></ion-card-title>
+        
+          </ion-card-content>
+        </ion-card>
+        <ion-card >
+            <ion-card-content>
+         
+              <ion-card-title>{{data.supply}}<span style="color:gainsboro"> Supply</span></ion-card-title>
+         
+          
+            </ion-card-content>
+          </ion-card>
+ </ion-content>

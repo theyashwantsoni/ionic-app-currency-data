@@ -1,21 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../data.service'
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss']
+  selector: 'app-crypto',
+  templateUrl: './crypto.page.html',
+  styleUrls: ['./crypto.page.scss'],
 })
-export class HomePage implements OnInit {
-  data :any;
+export class CryptoPage implements OnInit {
+
   constructor(private newService:DataService) { }
 
   ngOnInit() {
     this.newService.getdata().
           subscribe(
-            data =>{console.log(data);
-              this.data=data; 
-              
-            }
+            data =>{console.log(data)}
           );
   }
 

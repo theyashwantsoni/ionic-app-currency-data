@@ -1,5 +1,7 @@
 {
   "name": "bakwas",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
